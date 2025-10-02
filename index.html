@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TheGoodOrder</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    .series-card { border: 1px solid #ccc; padding: 20px; margin: 10px; border-radius: 10px; display: inline-block; cursor: pointer; }
+    .episode-card { border: 1px solid #ccc; padding: 20px; margin: 20px auto; border-radius: 10px; width: 300px; }
+    img { width: 200px; border-radius: 8px; }
+    button { padding: 10px; margin: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h1>TheGoodOrder</h1>
+
+<div id="series-selection">
+  <h2>Choisis une série</h2>
+  <!-- Cartes séries -->
+</div>
+
+<div id="frise" style="display:none;">
+  <h2 id="series-title"></h2>
+  <div class="episode-card">
+    <h3 id="episode-title"></h3>
+    <img id="episode-image" src="" alt="Image épisode">
+    <div>
+      <button onclick="prevEpisode()">⬅️ Précédent</button>
+      <button onclick="nextEpisode()">➡️ Suivant</button>
+    </div>
+    <button onclick="backToSeries()">⬅️ Retour aux séries</button>
+  </div>
+</div>
+
+<script>
+const seriesList = [
+  {
+    title: "Pokémon",
+    episodes: [
+      { title: "Épisode 1 : Au revoir Pikachu ?", image: "https://via.placeholder.com/200?text=Pokémon+Ep1" },
+      { title: "Épisode 2 : Un ami de toujours", image: "https://via.placeholder.com/200?text=Pokémon+Ep2" },
+      { title: "Épisode 3 : Le premier badge", image: "https://via.placeholder.com/200?text=Pokémon+Ep3" }
+    ]
+  },
+  {
+    title: "Naruto",
+    episodes: [
+      { title: "Épisode 1 : Enter Naruto Uzumaki!", image: "https://via.placeholder.com/200?text=Naruto+Ep1" },
+      { title: "Épisode 2 : Mon nom est Konohamaru!", image: "https://via.placeholder.com/200?text=Naruto+Ep2" }
+    ]
+  }
+];
+
+let currentSeries = null;
+let currentEpisode = 0;
+
+// Créer cartes séries dynamiquement
+const seriesDiv = document.getElementById("series-selection");
+seriesList.forEach((s, idx) => {
+  const card = document.createElement("div");
+  card.className = "series-card";
+  card.textContent = s.title;
+  card.onclick = () => selectSeries(idx);
+  seriesDiv.appendChild(card);
+});
+
+function selectSeries(idx) {
+  currentSeries = seriesList[idx];
+  currentEpisode = 0;
+  document.getElementById("series-title").textContent = currentSeries.title;
+  updateEpisode();
+  document.getElementById("series-selection").style.display = "none";
+  document.getElementById("frise").style.display = "block";
+}
+
+function updateEpisode() {
+  document.getElementById("episode-title").textContent = currentSeries.episodes[currentEpisode].title;
+  document.getElementById("episode-image").src = currentSeries.episodes[currentEpisode].image;
+}
+
+function nextEpisode() {
+  if(currentEpisode < currentSeries.episodes.length - 1) {
+    currentEpisode++;
+    updateEpisode();
+  }
+}
+
+function prevEpisode() {
+  if(currentEpisode > 0) {
+    currentEpisode--;
+    updateEpisode();
+  }
+}
+
+function backToSeries() {
+  document.getElementById("frise").style.display = "none";
+  document.getElementById("series-selection").style.display = "block";
+}
+</script>
+
+</body>
+</html>
