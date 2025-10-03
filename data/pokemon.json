@@ -1,1 +1,10 @@
-
+{
+  "title": "Pokémon",
+  "episodes": [
+    { "number": 1, "title": "Le départ de Sacha !", "image": "assets/images/pokemon/ep1.jpg" },
+    { "number": 2, "title": "La rencontre avec Pikachu", "image": "assets/images/pokemon/ep2.jpg" }
+  ],
+  "movies": [
+    { "title": "Pokémon : Le Film", "image": "assets/images/pokemon/movie1.jpg" }
+  ]
+}
