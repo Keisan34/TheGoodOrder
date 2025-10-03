@@ -1,5 +1,12 @@
 [
-  { "id": "pokemon", "title": "Pokémon" },
-  { "id": "naruto", "title": "Naruto" },
-  { "id": "onepiece", "title": "One Piece" }
+  {
+    "id": "pokemon",
+    "title": "Pokémon",
+    "dataFile": "pokemon.json"
+  },
+  {
+    "id": "naruto",
+    "title": "Naruto",
+    "dataFile": "naruto.json"
+  }
 ]
