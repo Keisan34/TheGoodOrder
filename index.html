@@ -12,7 +12,7 @@
 
   <script>
     // Charger la liste des séries
-    fetch('data/series.json')
+    fetch('series.json')
       .then(res => res.json())
       .then(series => {
         const container = document.getElementById('series-list');
