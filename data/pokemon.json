@@ -1,10 +1,20 @@
 {
   "title": "Pokémon",
-  "episodes": [
-    { "number": 1, "title": "Le départ de Sacha !", "image": "assets/images/pokemon/ep1.jpg" },
-    { "number": 2, "title": "La rencontre avec Pikachu", "image": "assets/images/pokemon/ep2.jpg" }
-  ],
-  "movies": [
-    { "title": "Pokémon : Le Film", "image": "assets/images/pokemon/movie1.jpg" }
+  "frise": [
+    {
+      "type": "saison",
+      "title": "Saison 1",
+      "episodes": [
+        { "title": "Épisode 1 : Le départ de Sacha", "image": "https://via.placeholder.com/200?text=Pokémon+Ep1" },
+        { "title": "Épisode 2 : La rencontre avec Pikachu", "image": "https://via.placeholder.com/200?text=Pokémon+Ep2" }
+      ]
+    },
+    {
+      "type": "film",
+      "title": "Mewtwo contre-attaque",
+      "episodes": [
+        { "title": "Film 1", "image": "https://via.placeholder.com/200?text=Pokémon+Film1" }
+      ]
+    }
   ]
 }
