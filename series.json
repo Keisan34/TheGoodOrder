@@ -1,0 +1,4 @@
+[
+  { "id": "pokemon", "title": "Pokémon", "dataFile": "data/pokemon.json" },
+  { "id": "naruto", "title": "Naruto", "dataFile": "data/naruto.json" }
+]
