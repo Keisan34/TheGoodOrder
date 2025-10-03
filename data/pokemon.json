@@ -32,4 +32,43 @@
     "description": "Célébi, la voix de la forêt (2001)"
   },
   {
-    "titl
+    "title": "Saison 5 : La Quête Ultime",
+    "description": "Episodes 212-276 : Conclusion de Johto."
+  },
+  {
+    "title": "Film 5",
+    "description": "Latias et Latios, les héros (2002)"
+  },
+  {
+    "title": "Saison 6 : Advanced",
+    "description": "Episodes 277-316 : Début des aventures à Hoenn."
+  },
+  {
+    "title": "Film 6",
+    "description": "Jirachi, le génie des vœux (2003)"
+  },
+  {
+    "title": "Saison 7 : Advanced Challenge",
+    "description": "Episodes 317-368 : Suite de Hoenn."
+  },
+  {
+    "title": "Film 7",
+    "description": "Destinée Deoxys (2004)"
+  },
+  {
+    "title": "Saison 8 : Advanced Battle",
+    "description": "Episodes 369-422 : Fin de Hoenn."
+  },
+  {
+    "title": "Film 8",
+    "description": "Lucario et le Mystère de Mew (2005)"
+  },
+  {
+    "title": "Saison 9 : Battle Frontier",
+    "description": "Episodes 423-468 : Ash dans la zone de combat de Kanto."
+  },
+  {
+    "title": "Film 9",
+    "description": "Pokémon Ranger et le Temple des Mers (2006)"
+  }
+]
