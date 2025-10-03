@@ -1,0 +1,13 @@
+{
+  "title": "Naruto",
+  "frise": [
+    {
+      "type": "saison",
+      "title": "Saison 1",
+      "episodes": [
+        { "title": "Épisode 1 : Naruto Uzumaki !", "image": "https://via.placeholder.com/200?text=Naruto+Ep1" },
+        { "title": "Épisode 2 : Mon nom est Konohamaru", "image": "https://via.placeholder.com/200?text=Naruto+Ep2" }
+      ]
+    }
+  ]
+}
