@@ -7,9 +7,23 @@
 </head>
 <body>
   <h1>TheGoodOrder</h1>
-  <div id="series-selection"></div>
-  <div id="frise" style="display:none;"></div>
+  <h2>Choisis ta série</h2>
+  <div id="series-list"></div>
 
-  <script src="app.js"></script>
+  <script>
+    // Charger la liste des séries
+    fetch('data/series.json')
+      .then(res => res.json())
+      .then(series => {
+        const container = document.getElementById('series-list');
+        series.forEach(s => {
+          const btn = document.createElement('a');
+          btn.textContent = s.title;
+          btn.href = `serie.html?id=${s.id}`;
+          btn.className = 'series-button';
+          container.appendChild(btn);
+        });
+      });
+  </script>
 </body>
 </html>
