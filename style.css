@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #series-list {
@@ -33,4 +33,9 @@ h2 {
 
 .series-button:hover {
   background-color: #45a049;
+}
+
+#frise img {
+  border-radius: 10px;
+  margin: 20px 0;
 }
