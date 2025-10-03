@@ -1,20 +1,35 @@
-{
-  "title": "Pokémon",
-  "frise": [
-    {
-      "type": "saison",
-      "title": "Saison 1",
-      "episodes": [
-        { "title": "Épisode 1 : Le départ de Sacha", "image": "https://via.placeholder.com/200?text=Pokémon+Ep1" },
-        { "title": "Épisode 2 : La rencontre avec Pikachu", "image": "https://via.placeholder.com/200?text=Pokémon+Ep2" }
-      ]
-    },
-    {
-      "type": "film",
-      "title": "Mewtwo contre-attaque",
-      "episodes": [
-        { "title": "Film 1", "image": "https://via.placeholder.com/200?text=Pokémon+Film1" }
-      ]
-    }
-  ]
-}
+[
+  {
+    "title": "Saison 1 : Ligue Indigo (Kanto)",
+    "description": "Episodes 1-82 : Les débuts d’Ash et Pikachu dans la région de Kanto."
+  },
+  {
+    "title": "Film 1",
+    "description": "Mewtwo contre-attaque (1998)"
+  },
+  {
+    "title": "Saison 2 : Îles Orange",
+    "description": "Episodes 83-118 : Voyage à travers l’archipel Orange."
+  },
+  {
+    "title": "Film 2",
+    "description": "Le Pouvoir est en toi (1999)"
+  },
+  {
+    "title": "Saison 3 : Ligue Johto",
+    "description": "Episodes 119-158 : Début du voyage à Johto."
+  },
+  {
+    "title": "Film 3",
+    "description": "Le Sort des Zarbi (2000)"
+  },
+  {
+    "title": "Saison 4 : Champions de Johto",
+    "description": "Episodes 159-211 : Suite des aventures à Johto."
+  },
+  {
+    "title": "Film 4",
+    "description": "Célébi, la voix de la forêt (2001)"
+  },
+  {
+    "titl
