@@ -1,41 +1,57 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: #f5f5f5;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
 }
 
-h1 {
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-#series-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.series-button {
-  display: inline-block;
-  padding: 15px 25px;
-  background-color: #4CAF50;
+header {
+  background: #2c3e50;
   color: white;
-  font-size: 18px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.3s;
+  padding: 1em;
+  text-align: center;
 }
 
-.series-button:hover {
-  background-color: #45a049;
+main {
+  padding: 2em;
 }
 
-#frise img {
-  border-radius: 10px;
+/* Style de la timeline */
+#timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-left: 3px solid #3498db;
+}
+
+/* Chaque bloc */
+.block {
+  position: relative;
   margin: 20px 0;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.block h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.block p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+/* Petit rond pour marquer la timeline */
+.block::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  background: #3498db;
+  border-radius: 50%;
 }
