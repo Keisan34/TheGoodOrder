@@ -1,74 +1,35 @@
-[
-  {
-    "title": "Saison 1 : Ligue Indigo (Kanto)",
-    "description": "Episodes 1-82 : Les débuts d’Ash et Pikachu dans la région de Kanto."
-  },
-  {
-    "title": "Film 1",
-    "description": "Mewtwo contre-attaque (1998)"
-  },
-  {
-    "title": "Saison 2 : Îles Orange",
-    "description": "Episodes 83-118 : Voyage à travers l’archipel Orange."
-  },
-  {
-    "title": "Film 2",
-    "description": "Le Pouvoir est en toi (1999)"
-  },
-  {
-    "title": "Saison 3 : Ligue Johto",
-    "description": "Episodes 119-158 : Début du voyage à Johto."
-  },
-  {
-    "title": "Film 3",
-    "description": "Le Sort des Zarbi (2000)"
-  },
-  {
-    "title": "Saison 4 : Champions de Johto",
-    "description": "Episodes 159-211 : Suite des aventures à Johto."
-  },
-  {
-    "title": "Film 4",
-    "description": "Célébi, la voix de la forêt (2001)"
-  },
-  {
-    "title": "Saison 5 : La Quête Ultime",
-    "description": "Episodes 212-276 : Conclusion de Johto."
-  },
-  {
-    "title": "Film 5",
-    "description": "Latias et Latios, les héros (2002)"
-  },
-  {
-    "title": "Saison 6 : Advanced",
-    "description": "Episodes 277-316 : Début des aventures à Hoenn."
-  },
-  {
-    "title": "Film 6",
-    "description": "Jirachi, le génie des vœux (2003)"
-  },
-  {
-    "title": "Saison 7 : Advanced Challenge",
-    "description": "Episodes 317-368 : Suite de Hoenn."
-  },
-  {
-    "title": "Film 7",
-    "description": "Destinée Deoxys (2004)"
-  },
-  {
-    "title": "Saison 8 : Advanced Battle",
-    "description": "Episodes 369-422 : Fin de Hoenn."
-  },
-  {
-    "title": "Film 8",
-    "description": "Lucario et le Mystère de Mew (2005)"
-  },
-  {
-    "title": "Saison 9 : Battle Frontier",
-    "description": "Episodes 423-468 : Ash dans la zone de combat de Kanto."
-  },
-  {
-    "title": "Film 9",
-    "description": "Pokémon Ranger et le Temple des Mers (2006)"
-  }
-]
+{
+  "title": "Pokémon",
+  "entries": [
+    {
+      "type": "season",
+      "title": "Saison 1 : La Ligue Indigo",
+      "episodes": 82,
+      "image": "images/pokemon_s1.jpg"
+    },
+    {
+      "type": "movie",
+      "title": "Pokémon : Le Film - Mewtwo contre-attaque",
+      "year": 1998,
+      "image": "images/pokemon_movie1.jpg"
+    },
+    {
+      "type": "season",
+      "title": "Saison 2 : Les Îles Orange",
+      "episodes": 36,
+      "image": "images/pokemon_s2.jpg"
+    },
+    {
+      "type": "movie",
+      "title": "Pokémon 2000 : Le Pouvoir est en toi",
+      "year": 1999,
+      "image": "images/pokemon_movie2.jpg"
+    },
+    {
+      "type": "season",
+      "title": "Saison 3 : Johto Journeys",
+      "episodes": 41,
+      "image": "images/pokemon_s3.jpg"
+    }
+  ]
+}
