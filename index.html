@@ -11,7 +11,6 @@
   <div id="series-list"></div>
 
   <script>
-    // Charger la liste des séries
     fetch('series.json')
       .then(res => res.json())
       .then(series => {
@@ -19,11 +18,12 @@
         series.forEach(s => {
           const btn = document.createElement('a');
           btn.textContent = s.title;
-          btn.href = `serie.html?id=${s.id}`;
+          btn.href = `serie.html?id=${s.id}&file=${s.dataFile}`;
           btn.className = 'series-button';
           container.appendChild(btn);
         });
-      });
+      })
+      .catch(err => console.error("Erreur fetch JSON :", err));
   </script>
 </body>
 </html>
