@@ -1,35 +1,9 @@
 {
-  "title": "Pokémon",
-  "entries": [
-    {
-      "type": "season",
-      "title": "Saison 1 : La Ligue Indigo",
-      "episodes": 82,
-      "image": "images/pokemon_s1.jpg"
-    },
-    {
-      "type": "movie",
-      "title": "Pokémon : Le Film - Mewtwo contre-attaque",
-      "year": 1998,
-      "image": "images/pokemon_movie1.jpg"
-    },
-    {
-      "type": "season",
-      "title": "Saison 2 : Les Îles Orange",
-      "episodes": 36,
-      "image": "images/pokemon_s2.jpg"
-    },
-    {
-      "type": "movie",
-      "title": "Pokémon 2000 : Le Pouvoir est en toi",
-      "year": 1999,
-      "image": "images/pokemon_movie2.jpg"
-    },
-    {
-      "type": "season",
-      "title": "Saison 3 : Johto Journeys",
-      "episodes": 41,
-      "image": "images/pokemon_s3.jpg"
-    }
+  "name": "Pokémon",
+  "timeline": [
+    { "title": "Saison 1", "episodes": 82 },
+    { "title": "Film 1", "episodes": 1 },
+    { "title": "Saison 2", "episodes": 55 },
+    { "title": "Film 2", "episodes": 1 }
   ]
 }
