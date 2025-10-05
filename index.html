@@ -7,23 +7,24 @@
 </head>
 <body>
   <h1>TheGoodOrder</h1>
-  <h2>Choisis ta série</h2>
+  <h2>Choisis ta série :</h2>
   <div id="series-list"></div>
 
   <script>
-    fetch('series.json')
-      .then(res => res.json())
-      .then(series => {
-        const container = document.getElementById('series-list');
-        series.forEach(s => {
-          const btn = document.createElement('a');
-          btn.textContent = s.title;
-          btn.href = `serie.html?id=${s.id}&file=${s.dataFile}`;
-          btn.className = 'series-button';
-          container.appendChild(btn);
-        });
-      })
-      .catch(err => console.error("Erreur fetch JSON :", err));
+    const seriesList = [
+      { name: "Pokémon", file: "data/pokemon.json" },
+      { name: "Naruto", file: "data/naruto.json" }
+    ];
+
+    const container = document.getElementById("series-list");
+
+    seriesList.forEach(s => {
+      const btn = document.createElement("a");
+      btn.textContent = s.name;
+      btn.href = `serie.html?file=${encodeURIComponent(s.file)}&name=${encodeURIComponent(s.name)}`;
+      btn.className = "series-button";
+      container.appendChild(btn);
+    });
   </script>
 </body>
 </html>
