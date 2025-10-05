@@ -1,57 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f9;
+  font-family: sans-serif;
+  padding: 20px;
 }
 
-header {
-  background: #2c3e50;
+#series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.series-button {
+  display: block;
+  padding: 12px;
+  background-color: #f39c12;
   color: white;
-  padding: 1em;
+  text-decoration: none;
+  border-radius: 5px;
   text-align: center;
 }
 
-main {
-  padding: 2em;
+.series-button:hover {
+  background-color: #e67e22;
 }
 
-/* Style de la timeline */
-#timeline {
-  position: relative;
-  margin: 0 auto;
-  padding-left: 40px;
-  border-left: 3px solid #3498db;
-}
-
-/* Chaque bloc */
-.block {
-  position: relative;
-  margin: 20px 0;
-  padding: 10px 20px;
-  background: white;
+.timeline-step {
+  border: 2px solid #3498db;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
-.block h3 {
-  margin: 0;
-  color: #2c3e50;
+.timeline-title {
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.block p {
-  margin: 5px 0 0;
-  color: #555;
+.counter {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
-/* Petit rond pour marquer la timeline */
-.block::before {
-  content: "";
-  position: absolute;
-  left: -28px;
-  top: 15px;
-  width: 16px;
-  height: 16px;
-  background: #3498db;
-  border-radius: 50%;
+.btn-container button {
+  margin-right: 8px;
+  padding: 4px 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
 }
