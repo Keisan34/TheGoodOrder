@@ -22,44 +22,62 @@
       .then(data => {
         const container = document.getElementById("timeline");
 
-        data.timeline.forEach((entry, index) => {
-          // Conteneur pour chaque étape
-          const stepDiv = document.createElement("div");
-          stepDiv.className = "timeline-step";
+       data.timeline.forEach((entry, index) => {
+  // Conteneur pour chaque étape
+  const stepDiv = document.createElement("div");
+  stepDiv.className = "timeline-step";
 
-          // Titre
-          const title = document.createElement("div");
-          title.className = "timeline-title";
-          title.textContent = entry.title;
-          stepDiv.appendChild(title);
+  // Titre
+  const title = document.createElement("div");
+  title.className = "timeline-title";
+  title.textContent = entry.title;
+  stepDiv.appendChild(title);
 
-          // Compteur
-          const counterDiv = document.createElement("div");
-          counterDiv.className = "counter";
-          let current = 0;
-          counterDiv.textContent = `${current} / ${entry.episodes}`;
-          stepDiv.appendChild(counterDiv);
+  // Compteur
+  const counterDiv = document.createElement("div");
+  counterDiv.className = "counter";
+  let current = 0;
+  counterDiv.textContent = `${current} / ${entry.episodes}`;
+  stepDiv.appendChild(counterDiv);
 
-          // Boutons + et -
-          const btnPlus = document.createElement("button");
-          btnPlus.textContent = "+";
-          const btnMinus = document.createElement("button");
-          btnMinus.textContent = "-";
+  // Boutons + et -
+  const btnPlus = document.createElement("button");
+  btnPlus.textContent = "+";
+  const btnMinus = document.createElement("button");
+  btnMinus.textContent = "-";
 
-          btnPlus.onclick = () => {
-            if(current < entry.episodes) {
-              current++;
-              counterDiv.textContent = `${current} / ${entry.episodes}`;
-              if(current === entry.episodes && index < data.timeline.length - 1) {
-                // Ajouter une flèche vers l’étape suivante
-                const arrow = document.createElement("div");
-                arrow.className = "arrow";
-                arrow.textContent = "↓";
-                stepDiv.appendChild(arrow);
-                stepDiv.scrollIntoView({behavior: "smooth"});
-              }
-            }
-          };
+  btnPlus.onclick = () => {
+    if(current < entry.episodes) {
+      current++;
+      counterDiv.textContent = `${current} / ${entry.episodes}`;
+    }
+  };
+
+  btnMinus.onclick = () => {
+    if(current > 0) {
+      current--;
+      counterDiv.textContent = `${current} / ${entry.episodes}`;
+    }
+  };
+
+  const btnContainer = document.createElement("div");
+  btnContainer.className = "btn-container";
+  btnContainer.appendChild(btnMinus);
+  btnContainer.appendChild(btnPlus);
+  stepDiv.appendChild(btnContainer);
+
+  // Ajouter l'étape à la frise
+  container.appendChild(stepDiv);
+
+  // Ajouter la flèche après l'étape sauf si c'est la dernière
+  if(index < data.timeline.length - 1) {
+    const arrow = document.createElement("div");
+    arrow.className = "arrow";
+    arrow.textContent = "↓";
+    container.appendChild(arrow);
+  }
+});
+
 
           btnMinus.onclick = () => {
             if(current > 0) {
